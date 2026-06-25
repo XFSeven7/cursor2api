@@ -1,0 +1,11 @@
+{
+  "port": 3010,
+  "apiKey": "sk-cursor2api",
+  "agentPath": "agent",
+  "workspace": ".",
+  "defaultModel": "auto",
+  "agentMode": "ask",
+  "sessionTtlMs": 3600000,
+  "requestTimeoutMs": 300000,
+  "loginCacheMs": 60000
+}
