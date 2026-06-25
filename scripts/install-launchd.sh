@@ -64,8 +64,8 @@ cat >"$PLIST_DEST" <<EOF
 </plist>
 EOF
 
-UID="$(id -u)"
-DOMAIN="gui/${UID}"
+USER_UID="$(id -u)"
+DOMAIN="gui/${USER_UID}"
 
 if launchctl print "${DOMAIN}/${LABEL}" &>/dev/null; then
   launchctl bootout "${DOMAIN}" "$PLIST_DEST" 2>/dev/null || true
